@@ -5,12 +5,13 @@
   "main": "dist/index",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prepublishOnly": "yarn compile",
+    "prepublishOnly": "yarn build",
     "lint": "eslint --fix --ext ts src",
     "test": "eslint --ext ts src",
     "build": "tsc -p .",
     "watch": "tsc -p . -w",
-    "docs": "typedoc"
+    "docs": "typedoc",
+    "prepublish": "tsc -p ."
   },
   "repository": {
     "type": "git",
